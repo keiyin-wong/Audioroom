@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:background="@drawable/group_list_row_backgroud"
+    android:clickable="true">
+
+    <com.cometchat.pro.uikit.ui_components.shared.cometchatAvatar.CometChatAvatar
+        android:id="@+id/av_group"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groupDesription"
+        tools:src="@drawable/search" />
+
+    <com.cometchat.pro.uikit.ui_components.shared.cometchatUserPresence.CometChatUserPresence
+        android:id="@+id/statusIndicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/av_group"
+        android:layout_marginStart="-32dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/av_group"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/av_group"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@{group.name}"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:drawableRight="@drawable/ic_lock_24dp"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/txt_user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:textSize="@dimen/fourteen"
+        android:visibility="visible"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Public" />
+
+    <TextView
+        android:id="@+id/iAmAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fourteen"
+        android:visibility="visible"
+        android:text="I am Admin"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/groupDesription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Hello world"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteen"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_name" />
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/person1"
+        app:layout_constraintLeft_toRightOf="@+id/av_group"
+        app:layout_constraintTop_toBottomOf="@id/groupDesription"/>
+
+    <TextView
+        android:id="@+id/memberCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:text="Member Count"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteen"
+        app:layout_constraintLeft_toRightOf="@+id/userIcon"
+        app:layout_constraintTop_toBottomOf="@id/groupDesription"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

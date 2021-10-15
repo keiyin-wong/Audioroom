@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appback"
+    tools:context=".GroupHomePage">
+
+    <include
+        android:id="@+id/group_toolbar"
+        layout="@layout/group_home_page_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:id="@+id/adminLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/group_toolbar"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@color/black"
+            android:gravity="center">
+        </TextView>
+        <include
+            android:id="@+id/groupAdmin"
+            layout="@layout/grid_list_row_user"
+            >
+        </include>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/guestInform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textSize="45dp"
+        android:text="You Are Guest"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminLinearLayout"
+        android:visibility="invisible">
+
+    </TextView>
+
+
+    <GridView
+        android:id="@+id/adminList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adminLinearLayout">
+
+    </GridView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/appback"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/startCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_corner"
+            android:fontFamily="@font/finger_paint"
+            android:onClick="startCall"
+            android:text="Join Room"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/callRelativeLayout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="500dp">-->
+    <!--        </RelativeLayout>-->
+    <!--    </ScrollView>-->

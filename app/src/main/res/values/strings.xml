@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Audioroom</string>
+    <string name="button">Button</string>
+    <string-array name="roomtype">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+</resources>

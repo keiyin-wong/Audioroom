@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@color/button"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    tools:context=".UserProfilePage">
+
+    <EditText
+        android:id="@+id/newUsername"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:fontFamily="@font/finger_paint"
+        android:hint="Enter new username"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newBio"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:fontFamily="@font/finger_paint"
+        android:hint="Enter new bio"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUsername" />
+
+    <Button
+        android:id="@+id/Buttonforupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="125dp"
+        android:background="@drawable/button_corner"
+        android:fontFamily="@font/finger_paint"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/appback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newBio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

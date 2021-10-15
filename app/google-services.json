@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "914930792806",
+    "project_id": "audioroom-e0e42",
+    "storage_bucket": "audioroom-e0e42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914930792806:android:eff73378faf923aa5c30a7",
+        "android_client_info": {
+          "package_name": "my.edu.utar.audioroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914930792806-502n217e2m8jcs9l93n6e3kuq928g9rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3GkaAuqZSw8QWzNcKP1m3EpZ9TRR1TTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914930792806-502n217e2m8jcs9l93n6e3kuq928g9rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
